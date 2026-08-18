@@ -8,7 +8,6 @@
 
 - 若想对接其他大语言模型，可替换 ``components`` 文件夹中的 [baidu_llm](components/baidu_llm)，并修改 [main/app/app_audio_record.c](main/app/app_audio_record.c) 中对应的内容。
 
-- [Demo 视频](https://www.bilibili.com/video/BV1MezzYaEfP/)中展示了接入小度 APP 并使用对应功能（包含对接文心一言大模型），使用该功能需要联系百度商务以获取其特殊提供的 **DuerOS profile、设备名前缀和密钥**。当前**个人开发者无法自行通过网页获取**。也可以**联系[乐鑫商务](https://www.espressif.com/zh-hans/contact-us/sales-questions)获取更多信息**
 
 - 若已经获取了 DuerOS profile、设备名前缀和密钥，可以先体验 ESP-ADF 中的 [DuerOS 方案](https://github.com/espressif/esp-adf/tree/master/examples/dueros)。若想结合本工程，可以将 [baidu_llm](components/baidu_llm) 组件替换为 [dueros_service](https://github.com/espressif/esp-adf/tree/master/components/dueros_service) 组件。注意：[DuerOS 方案](https://github.com/espressif/esp-adf/tree/master/examples/dueros) 开发需要搭建 [ESP-ADF](https://github.com/espressif/esp-adf/tree/master) 开发环境。
 
