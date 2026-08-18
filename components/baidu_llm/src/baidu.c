@@ -133,7 +133,7 @@ err:
 // #define BAIDUBCE_MESSAGE_FORMAT "{\"model\":\"ernie-4.5-turbo-128k\",\"messages\":[{\"role\":\"user\",\"content\":\"%s\"}],\"web_search\":{\"enable\":false,\"enable_citation\":false,\"enable_trace\":false},\"plugin_options\":{}}"
 // #define BAIDU_LLM_URL            "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-lite-8k?access_token=%s"
 #define BAIDU_LLM_URL           "https://qianfan.baidubce.com/v2/chat/completions"
-#define API_KEY                 "bce-v3/ALTAK-pe8BqsK8wdKBM4A2SWNLg/ef5942f0ecb1c533e0538c0021e8f463408df374"
+#define API_KEY                 "bce-v3/ALTAK-pe8BqsK8wdKBM4A2SWNLg/ef5942f0ecb1c533e0538c0021e8"
 
 esp_err_t baidu_chatbot_send_request(char *system_content, char *user_content)
 {
@@ -356,8 +356,8 @@ esp_err_t baidu_chatbot_recv_response(char *response_data, size_t output_size)
 * receives a text response, and processes it.
 */
 #define BAIDUBCE_STT_URL            "http://vop.baidu.com/server_api?dev_pid=1537&cuid=F2sreBeZNdY2jWwlUwbTxPy8R1gFMzEL&token=%s"
-#define AUDIO_TOKEN                 "25.68c75d7e988bbadbd63e308692e06a6a.315360000.2090295727.282335-121194119"
-#define CUID "F2sreBeZNdY2jWwlUwbTxPy8R1gFMzEL"
+#define AUDIO_TOKEN                 "25.68c75d7e988bbadbd63e308692e06a6a.315360000.2090295727.282335-1211"
+#define CUID "F2sreBeZNdY2jWwlUwbTxPy8R1gFM"
 static esp_http_client_handle_t g_baidu_asr_http_handle = NULL;
 
 esp_err_t baidu_asr_send_audio(const int16_t *audio, size_t len, size_t total_len)
