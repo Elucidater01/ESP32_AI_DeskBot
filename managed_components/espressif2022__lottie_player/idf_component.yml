@@ -1,0 +1,16 @@
+dependencies:
+  cmake_utilities: 0.*
+  espressif/thorvg: ^0.14.9
+  idf: '>=4.4'
+  lvgl/lvgl:
+    version: '>=8,<9'
+description: A Lottie player built for LVGL V8, powered by Thorvg as the rendering
+  engine.
+documentation: https://bellard.org/lottie_player/
+issues: https://github.com/espressif2022/lottie_player/issues
+repository: git://github.com/espressif2022/lottie_player.git
+repository_info:
+  commit_sha: 3980987b8e7de911fe5b857d90bd3420fe99d123
+  path: .
+url: https://github.com/espressif2022/lottie_player
+version: 1.0.0
